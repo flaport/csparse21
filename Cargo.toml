@@ -1,5 +1,5 @@
 [package]
-name = "sparse21"
+name = "csparse21"
 description = "Sparse Matrix Solver"
 readme = "readme.md"
 license = "BSD-3-Clause"
@@ -11,4 +11,5 @@ edition = "2018"
 
 [dependencies]
 glob = "0.3.0"
+num-complex = "0.4.4"
 

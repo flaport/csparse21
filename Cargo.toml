@@ -3,9 +3,12 @@ name = "csparse21"
 description = "Sparse Matrix Solver"
 readme = "readme.md"
 license = "BSD-3-Clause"
-version = "0.2.2"
-authors = ["Dan Fritchman <dan@fritch.mn>"]
-edition = "2018"
+version = "0.2.3"
+authors = [
+  "Dan Fritchman <dan@fritch.mn>",
+  "Floris Laporte <floris.laporte@gmail.com>",
+]
+edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

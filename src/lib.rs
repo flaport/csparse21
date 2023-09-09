@@ -988,7 +988,7 @@ impl Matrix {
     /// Returns an `Err` if unsuccessful.
     ///
     /// Performs LU factorization, forward and backward substitution.
-    pub fn solve(&mut self, rhs: Vec<Complex64>) -> SpResult<Vec<Complex64>> {
+    pub fn solve(&mut self, rhs: &[Complex64]) -> SpResult<Vec<Complex64>> {
         if self.state == MatrixState::CREATED {
             self.lu_factorize()?;
         }
@@ -1162,7 +1162,7 @@ impl System {
     ///
     /// Performs LU factorization, forward and backward substitution.
     pub fn solve(mut self) -> SpResult<Vec<Complex64>> {
-        self.mat.solve(self.rhs)
+        self.mat.solve(&self.rhs)
     }
 }
 
